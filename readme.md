@@ -6,7 +6,7 @@
 
 ## Benefits of terminate
 1- Easy to use.
-2- More user power.
+2- More user power.\n
 3- Modular.
 4- Time gain  compared to the unix kill command.
 
