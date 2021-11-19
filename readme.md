@@ -21,12 +21,13 @@ Exemples:
 	
 	terminate firefox
 
-explaination: this will get all the processes related to firefox in your machine, and kill them.
+-i.e: This will get all the processes related to firefox in your machine, and kill them.
 	      so all you firefox windows will be shutdown.
 
 
 
-## License: MIT.
+## License:
+MIT
 
 
 
