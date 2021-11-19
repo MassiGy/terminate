@@ -13,17 +13,33 @@ This script is designed to stop process just like the "kill -9" unix command, in
 
 
 ## Usage:
-	terminate <name_of_the_process>.
+#### Using The Process Name:
+ 
+	terminate <name_of_the_process>
 	
 	:stdout: killed
-	:sterr : it depends on whatever the problem cause is.	
 
 Exemples:
 	
 	terminate firefox
 
--i.e: This will get all the processes related to firefox in your machine, and kill them.
+This will get all the processes related to firefox in your machine, and kill them.
 	      so all you firefox windows will be shutdown.
+
+#### Using String Expension:
+
+	terminate <sub_string>*
+	
+	:stdout: warning message built in the terminate script, then if all it goes well, you will get the "killed" message.
+
+Exemples:
+	
+	terminate fire*
+
+This will get all the processes with a process name begining with "fire", then it will kill them.
+
+##### Warning: 
+Using the string expention method gives you more flexiblity and power, but it also can be very dangerous, do it at your own risk.
 
 
 
