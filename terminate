@@ -8,21 +8,20 @@
 
 
 if [ ! "$1"  ]; then 
-	echo "Error : missing arguments."
-	echo "Usage : terminate <job-name>"
-	echo "Status: exiting with status 1."
+	echo "Error : missing arguments.";
+	echo "Usage : terminate <job-name>";
+	exit 1;
 fi 
 
 
 if [ $(expr index '*' "$1" ) -ne 0  ]; then
-        echo "WARNING: your arguments contain a greedy expression character"
-        echo "WARNING: your arguments contains a '*' character"
-        echo "WARNING: this can terminate multiple process at one time"
-        echo "PROMPT : Do you want to continue? y/n"
-        read answer
+        echo "WARNING: your arguments contain a greedy expression character";
+        echo "WARNING: your arguments contains a '*' character";
+        echo "WARNING: this can terminate multiple process at one time";
+        echo "PROMPT : Do you want to continue? y/n";
+        read answer;
         if [ $answer == 'n' ]; then
-                echo "Satatus: exiting with status 2."
-                exit;
+                exit 2;
         fi
 fi
 
@@ -39,7 +38,7 @@ fi
 
 for element in $(ps -aux | grep "$1" | awk '{printf "%i\n", $2}' )
 do 
-	kill -9 $element;
+    sudo kill -9 $element;
 done
 
 # NOTE: the "$2" in the awk printf command refers to the second feild of each line of text returned
