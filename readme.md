@@ -18,7 +18,7 @@ This script is designed to stop process just like the "kill -9" unix command, in
 
 The expected output of the last command is "/usr/bin/terminate"
 
-##### Note: 
+##### Note 
 Now you can run the terminate command anywhere in your machine.
 
 
@@ -30,7 +30,7 @@ Now you can run the terminate command anywhere in your machine.
 4. Time gain  compared to the unix kill command.		
 
 
-## Usage:
+## Usage
 #### Using The Process Name:
  
 	terminate <name_of_the_process>
@@ -56,12 +56,12 @@ Exemples:
 
 This will get all the processes with a process name begining with "fire", then it will kill them.
 
-##### Warning: 
+##### Warning
 Using the string expention method gives you more flexiblity and power, but it also can be very dangerous, do it at your own risk.
 
 
 
-## License:
+## License
 MIT
 
 
