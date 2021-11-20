@@ -5,6 +5,24 @@
 This script is designed to stop process just like the "kill -9" unix command, in fact this uses it under the hood, but this tool give the user more power by just providing the name of the process and not be obliged to go and search for each p-id related to it and kill them one after the other.
 
 
+## Setup
+	
+	git clone <this repo url>
+	--
+	cd terminate
+	--
+	cp ./terminate /usr/bin/terminate
+	--
+	// OPTIONAL
+	which terminate
+
+The expected output of the last command is "/usr/bin/terminate"
+
+##### Note: 
+Now you can run the terminate command anywhere in your machine.
+
+
+
 ## Benefits of terminate
 1. Easy to use.		
 2. More user power.		
